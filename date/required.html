@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>required validation</title>
+</head>
+<body>
+    Enter Your Name:
+    <input type="text" id="name">
+    <br>
+    Enter Your Email:
+    <input type="text" id="email">
+    <br>
+    Enter your mobile:
+    <input type="number" id="number">
+    <br>
+    <input type="submit" onclick="check()">
+
+    <script>
+
+        function check(){
+            let name=document.getElementById('name').value;
+            let email=document.getElementById('email').value;
+            let number=document.getElementById('number').value;
+            // window.alert(number);
+
+            if(name==''){
+                alert('name is required');
+            }else{
+                alert('valid name');
+            }
+
+             if(email==''){
+                alert('email is required');
+            }else{
+                alert('valid email');
+            }
+
+             if(number==''){
+                alert('number is required');
+            }else{
+                alert('valid number');
+            }
+
+            
+        }
+    </script>
+
+</body>
+</html>
