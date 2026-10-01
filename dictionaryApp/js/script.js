@@ -12,7 +12,7 @@ async function search(){
     let res=await fetch(url);
     let data=await res.json();
     console.log(data);
-    // document.getElementById('def').innerHTML=data.entries[0].senses[0].definition;
+    // document.getElementById('def').innerHTML=data.entries[0].senses[0].definiton;
     // document.getElementById('def').innerHTML=data.entries[0].partOfSpeech;
     // document.getElementById('def').innerHTML=data.entries[0].;
 }
